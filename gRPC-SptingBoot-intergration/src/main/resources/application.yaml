@@ -1,0 +1,14 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: demo-grpc
+
+grpc:
+  client:
+    greeterService:
+      address: static://localhost:9090
+      negotiationType: PLAINTEXT
+
