@@ -12,4 +12,10 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gRPC" options="" />
+      <module name="gRPC-proto" options="" />
+    </option>
+  </component>
 </project>

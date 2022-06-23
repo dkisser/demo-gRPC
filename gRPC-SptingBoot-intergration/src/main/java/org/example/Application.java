@@ -3,8 +3,6 @@ package org.example;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
-import static org.springframework.boot.WebApplicationType.SERVLET;
-
 /**
  * Hello world!
  *

@@ -1,14 +1,24 @@
 
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
     name: demo-grpc
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
 
 grpc:
   client:
     greeterService:
       address: static://localhost:9090
       negotiationType: PLAINTEXT
+    greeterService1:
+      address: discovery:/demo-grpc
+      negotiationType: PLAINTEXT
+  server:
+    port: 9091
+
+
 
